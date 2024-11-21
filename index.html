@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .full-image {
+            width: 100%; /* Ensures the image uses full width */
+            height: auto;
+        }
+
+        .button-overlay {
+            position: absolute;
+            top: 55%; /* Centers the button vertically */
+            left: 58%; /* Centers the button horizontally */
+            transform: translate(-50%, -50%); /* Adjusts for the button size */
+            z-index: 2;
+        }
+
+        .button-overlay button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-overlay button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Slightly darker on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Full resolution image -->
+        <img src="Screenshot_EMR_Hadassah.PNG" alt="App Image" class="full-image">
+             alt="App Image" class="full-image">
+
+        <!-- Button overlay -->
+        <div class="button-overlay">
+            <button onclick="location.href='http://localhost:8501'">מערכת תמלול רפואי חכמה </button>
+        </div>
+    </div>
+</body>
+</html>
